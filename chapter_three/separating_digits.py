@@ -4,7 +4,7 @@ division = 10000
 
 for index in range(5):
     digit = number // division
-    print(digit, end='')
+    print(f'{digit}')
 
     number = number % division
     division //= 10
