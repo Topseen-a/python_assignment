@@ -1,3 +1,4 @@
+largest = 0
 first_largest = 0
 second_largest = 0
 
