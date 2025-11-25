@@ -17,7 +17,7 @@
 def get_multiplication(number_one, number_two):
     result = 0
     for count in range(number_two):
-        result += number_one
+        result = result + number_one
     return result
     
 print(get_multiplication(3, 2))
