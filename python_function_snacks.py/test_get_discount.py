@@ -9,3 +9,13 @@ class TestGetDiscount(unittest.TestCase):
         actual = get_discount.get_discount('item name', 50, 'promocode')
         expected = 45
         self.assertEqual(actual,expected)
+
+    def test_that_get_discount_returns_discount_halfoff(self):
+        actual = get_discount.get_discount('item name', 50, 'promocode')
+        expected = 25
+        self.assertEqual(actual,expected)
+
+    def test_that_get_discount_returns_no_discount(self):
+        actual = get_discount.get_discount('item name', 50, 'promocode')
+        expected = 50
+        self.assertEqual(actual,expected)
