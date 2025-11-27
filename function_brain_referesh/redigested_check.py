@@ -14,6 +14,15 @@ def check_length(word):
 
 print(check_length('Topseen'))
 
+def check_reversed_word(word):
+    reverse = ''
+    for letter in word:
+        reverse = letter + reverse
+    return reverse
+    
+print(check_reversed_word('Hello'))
+
+
 def get_vowel(word):
     for letter in range(1, 27):
         if letter == 'a' or letter == 'e' or letter == 'i' or letter == 'o' or letter == 'u':
@@ -21,3 +30,5 @@ def get_vowel(word):
             return letter
 
 print(get_vowel('apple'))
+
+
