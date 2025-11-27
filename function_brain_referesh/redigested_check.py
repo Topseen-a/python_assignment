@@ -5,7 +5,7 @@ def check_minutes(minutes):
     return time
 
 print(check_minutes(30))
-    
+   
 def check_length(word):
     count = 0
     for letter in word:
@@ -22,7 +22,6 @@ def check_reversed_word(word):
     
 print(check_reversed_word('Hello'))
 
-
 def get_vowel(word):
     for letter in range(1, 27):
         if letter == 'a' or letter == 'e' or letter == 'i' or letter == 'o' or letter == 'u':
@@ -30,5 +29,3 @@ def get_vowel(word):
             return letter
 
 print(get_vowel('apple'))
-
-
