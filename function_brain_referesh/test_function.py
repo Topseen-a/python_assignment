@@ -1,7 +1,7 @@
 import unittest
 import redigested_check
 
-class TestCheckMinutesFunction(unittest.TestCase):
+class TestFunction(unittest.TestCase):
     def test_that_check_minutes_function_exist(self):
         redigested_check.check_minutes(30)
 
