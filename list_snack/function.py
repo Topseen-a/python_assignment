@@ -7,4 +7,16 @@ def add_third_element(number):
         total += number[count]
     return total
 
+def sum_first_middle_last(number):
+    first_element = number[0]
+    last_element = number[-1]
+    length = 0
 
+    for count in number:
+        length += 1
+
+    if length % 2 == 1:
+        middle_element = number[length // 2]
+    
+    total = first_element + middle_element + last_element
+    return total
