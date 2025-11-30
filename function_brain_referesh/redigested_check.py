@@ -5,7 +5,7 @@ def check_minutes(minutes):
     return time
 
 print(check_minutes(30))
-   
+
 def check_length(word):
     count = 0
     for letter in word:
