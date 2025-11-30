@@ -8,3 +8,12 @@ def get_discount(item_name, original_price, promo_code):
 
     discounted_price = original_price * (1 - discount)
     return discounted_price
+
+
+def is_palindrome_prime(number):
+    if number < 2:
+        return False
+
+    for count in range(2, number):
+        if number % count == 0:
+            return False
