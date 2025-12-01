@@ -3,6 +3,7 @@ import random
 numbers = [random.randint(1, 50) for count in range(10)]
 print('Random numbers are', numbers)
 
+
 length = 0
 for count in numbers:
     length += 1
