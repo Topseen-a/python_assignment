@@ -1,7 +1,7 @@
 import random
 def book_suggestion_system():
 
-    books = ["Hello", "World"]
+    books = ["Far from Home", "The Iceberg", "Lone Survivor", "Elementor"]
     while True:    
         print("Welcome to the Book Suggestion System")
         print("1. Get suggestions")
@@ -36,7 +36,7 @@ def get_suggestions(books):
         print(f"Book Title: {book}")
         print(f"Page: {page}")
 
-        again = input("WOuld you like to get another suggestion: yes/no? ").lower()
+        again = input("Would you like to get another suggestion: yes/no? ").lower()
         if again != "yes":
             break
 def add_book(books):
@@ -72,7 +72,10 @@ def show_books(books):
 
     while True:
         print("All books")
-        
-
+        index = 1
+        for b in books:
+            print(str(index) + ". " + b)
+            index += 1
+        break
 print(book_suggestion_system())
 
