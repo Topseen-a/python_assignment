@@ -10,7 +10,7 @@ def book_suggestion_system():
         print("3. Remove book")
         print("4. Update book")
         print("5. Show all Books")
-        print("6. Exit")
+        print("0. Exit")
 
         choice = input("Enter a number: ")
         match choice:
@@ -24,7 +24,7 @@ def book_suggestion_system():
                 update_book(books)
             case "5":
                 show_books(books)
-            case "6":
+            case "0":
                 print("Exiting program")
                 break
 
