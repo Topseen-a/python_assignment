@@ -39,6 +39,6 @@ def show_books(books):
 
         print("All books")
         index = 1
-        for b in books:
-            print(str(index) + ". " + b)
+        for count in books:
+            print(str(index) + ". " + count)
             index += 1
