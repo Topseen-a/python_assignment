@@ -44,7 +44,13 @@ def is_palindrome(number):
     else:
         return False
 
-print(is_palindrome(54145))
+def factorial_of(number):
+    factorial = 1
+    for count in range(1,number +1):
+        factorial *= count
+    return factorial
+
+print(factorial_of(5))
 
 
 
