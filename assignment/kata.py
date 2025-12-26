@@ -50,7 +50,14 @@ def factorial_of(number):
         factorial *= count
     return factorial
 
-print(factorial_of(5))
+def square_of(number):
+    return number * number
 
+def is_prime(number):
+    if number <= 1:
+        return False
 
-
+    for count in range(2, number // 2 + 1):
+        if number % count == 0:
+            return False
+    return True
