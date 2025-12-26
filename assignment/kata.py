@@ -32,4 +32,19 @@ def is_square(number):
     else:
         return False
 
-print(is_square(5))
+def is_palindrome(number):
+    first_number = number // 10000
+    second_number = (number // 1000) % 10
+    third_number = (number // 100) % 10
+    fourth_number = (number // 10) % 10
+    fifth_number = number % 10
+
+    if first_number == fifth_number and second_number == fourth_number:
+        return True
+    else:
+        return False
+
+print(is_palindrome(54145))
+
+
+
