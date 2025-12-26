@@ -1,3 +1,5 @@
+import math
+
 def is_even(number):
     if number % 2 == 0:
         return True
@@ -23,4 +25,11 @@ def factor_of(number):
             factor += 1
     return factor
 
-print(factor_of(10))
+def is_square(number):
+    result = math.sqrt(number)
+    if (result * result == number):
+        return True
+    else:
+        return False
+
+print(is_square(5))
