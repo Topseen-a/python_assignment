@@ -68,4 +68,16 @@ def even_numbers_in(array_list):
             new_list.append(array_list[count])
     return new_list
 
-print(even_numbers_in(array_list))
+def odd_numbers_in(array_list):
+    new_list = []
+    for count in range(0,len(array_list)):
+        if array_list[count] % 2 != 0:
+            new_list.append(array_list[count])
+    return new_list
+
+def square_numbers_in(array_list):
+    new_list = []
+    for count in range(0,len(array_list)):
+        square = array_list[count] * array_list[count]
+        new_list.append(square)
+    return new_list
