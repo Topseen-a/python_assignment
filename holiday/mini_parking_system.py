@@ -46,3 +46,7 @@ while True:
                     status = "Occupied"
                 print("Slot", (count + 1), ":", status)
             print()
+
+        case _:
+            print("Invalid choice, choose an option from the listed option ")
+            print()
