@@ -25,3 +25,14 @@ while True:
                 parking_slot[slot_choice - 1] = 1
                 print("Your car is parked at slot", slot_choice)
                 print()
+
+        case 2:
+            remove_slot_number = int(input("Enter the slot number to remove your car: "))
+            if remove_slot_number < 1 or remove_slot_number > 20:
+                print("Invalid choice ")
+            elif parking_slot[remove_slot_number - 1] == 0:
+                print("Slot already empty ")
+            else:
+                parking_slot[remove_slot_number - 1] = 0
+                print("Your car is removed from slot", remove_slot_number)
+                print()
