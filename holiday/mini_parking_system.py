@@ -2,8 +2,7 @@ parking_slot = [0] * 20
 
 while True:
     print("Welcome to Mini Parking System. ")
-    print()
-    print("1. Choose a slot to park your car ")
+    print("\n1. Choose a slot to park your car ")
     print("2. Remove your car from the slot ")
     print("3. Display parking status ")
     print("0. Exit the app ")
@@ -36,3 +35,14 @@ while True:
                 parking_slot[remove_slot_number - 1] = 0
                 print("Your car is removed from slot", remove_slot_number)
                 print()
+
+        case 3:
+            print("\nParking status: ")
+            for count in range(0,len(parking_slot)):
+                status = ""
+                if parking_slot[count] == 0:
+                    status = "Empty"
+                else:
+                    status = "Occupied"
+                print("Slot", (count + 1), ":", status)
+            print()
